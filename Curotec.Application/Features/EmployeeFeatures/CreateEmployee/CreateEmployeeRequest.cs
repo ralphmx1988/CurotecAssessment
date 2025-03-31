@@ -13,7 +13,7 @@ namespace Curotec.Application.Features.EmployeeFeatures.CreateEmployee
         string FirstName,
         string LastName,
         string Email,
-        Guid DepartmentId)
+        int DepartmentId)
         : IRequest<CreateEmployeeResponse>;
 
 
