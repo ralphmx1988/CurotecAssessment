@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using System.Security.Cryptography.X509Certificates;
+using MediatR;
 
 namespace Curotec.Application.Features.EmployeeFeatures.CreateEmployee
 {
@@ -10,6 +11,7 @@ namespace Curotec.Application.Features.EmployeeFeatures.CreateEmployee
     /// <param name="Email">The email address of the employee.</param>
     /// <param name="DepartmentId">The unique identifier of the department the employee belongs to.</param>
     public sealed record CreateEmployeeRequest(
+
         string FirstName,
         string LastName,
         string Email,

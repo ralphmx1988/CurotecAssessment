@@ -8,7 +8,7 @@
         /// <summary>
         /// Gets or sets the unique identifier of the employee.
         /// </summary>
-        public Guid Id { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Gets or sets the email address of the employee.
