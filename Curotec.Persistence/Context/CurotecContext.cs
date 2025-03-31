@@ -44,6 +44,27 @@ namespace Curotec.Persistence.Context
                 }
             );
 
+            modelBuilder.Entity<Department>().HasData(
+                new Department
+                {
+                    Id = 1,
+                    Name = "HR"
+                    
+                }
+            );
+
+            modelBuilder.Entity<Employee>().HasData(
+                new Employee()
+                {
+                    Id = 1,
+                    FirstName = "Rafael",
+                    LastName = "Cardenas",
+                    Email = "rafaelj76@gail.com",
+                    DepartmentId = 1
+
+                }
+            );
+
         }
     }
 }
